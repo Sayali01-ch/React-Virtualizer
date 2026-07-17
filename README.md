@@ -18,7 +18,7 @@ This workspace contains a React + TypeScript demo for a virtualized infinite-scr
 
 3. Open the browser at the URL shown by Vite (usually `http://localhost:5173`).
 
-## Preview for your manager
+## Preview 
 
 - Use `npm run dev` to show the working demo interactively.
 - Use `npm run preview` after `npm run build` for a production-like preview.
