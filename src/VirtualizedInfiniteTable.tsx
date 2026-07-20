@@ -85,7 +85,7 @@ export default function VirtualizedInfiniteTable() {
             return (
               <TableRow
                 key={virtualRow.key}
-                item={items[virtualRow.index]}
+                item={isLoaderRow ? undefined : (items[virtualRow.index] as any)}
                 isLoaderRow={isLoaderRow}
                 hasMore={hasMore}
                 top={virtualRow.start}
