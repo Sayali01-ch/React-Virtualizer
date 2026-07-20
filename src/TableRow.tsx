@@ -5,7 +5,7 @@ import React from "react";
 import type { Item } from "./types";
 
 interface TableRowProps {
-  item?: Item;
+  item?: Item & { value?: string | number; status: keyof typeof statusColor };
   isLoaderRow: boolean;
   hasMore: boolean;
   top: number; // translateY offset from the virtualizer
