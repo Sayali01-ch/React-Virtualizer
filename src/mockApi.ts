@@ -1,7 +1,4 @@
-// ============================================================================
-// mockApi.ts
-//
-// STEP 0: MOCK API — replace this with your real backend call.
+// MOCK API — replace this with your real backend call.
 // Simulates a paginated endpoint with network delay.
 //
 // HOW TO USE THIS IN YOUR REAL PROJECT:
@@ -17,7 +14,6 @@
 //     GET /api/items?cursor=<lastId>&limit=50
 //   and return:
 //     { data: [...], nextCursor: <id or null>, hasMore: true/false }
-// ============================================================================
 
 import type { Item, PageResponse } from "./types";
 
@@ -38,6 +34,9 @@ export function mockFetchPage(
         return {
           id,
           name: `Item #${id}`,
+          email: `user${id}@example.com`,
+          company: `Company ${Math.ceil((id + 1) / 10)}`,
+          city: `City ${id % 20}`,
           status: id % 3 === 0 ? "Active" : id % 3 === 1 ? "Pending" : "Closed",
           value: `$${(id * 37.5).toFixed(2)}`,
         };
