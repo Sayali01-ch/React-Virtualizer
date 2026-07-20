@@ -1,9 +1,5 @@
-// ============================================================================
-// useInfiniteItems.ts
-//
-// STEP 1: FETCH LOGIC — this is the "calling api" / pagination bookmark part.
+// FETCH LOGIC — this is the "calling api" / pagination bookmark part.
 // Encapsulated as a hook so it's reusable and separate from rendering concerns.
-// ============================================================================
 
 import { useState, useCallback, useEffect } from "react";
 import { mockFetchPage, PAGE_SIZE } from "./mockApi";
