@@ -1,4 +1,4 @@
-# React Virtualized Infinite Table
+# React Virtualization
 
 This workspace contains a React + TypeScript demo for a virtualized infinite-scroll table.
 
